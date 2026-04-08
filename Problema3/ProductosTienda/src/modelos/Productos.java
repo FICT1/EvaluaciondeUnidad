@@ -7,10 +7,10 @@ public class Productos {
     private float precio;
     private int cantidad;
 
-    public Producto() {
+    public void Producto() {
     }
 
-    public Producto(String codigo, String nombre, float precio, int cantidad) {
+    public void Producto(String codigo, String nombre, float precio, int cantidad) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
