@@ -17,5 +17,25 @@ public class Productos {
         this.cantidad = cantidad;
     }
 
+    public float calcularMonto() {
+        return precio * cantidad;
+    }
+
+    public boolean disponible() {
+        return cantidad > 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Producto{" +
+                "codigo='" + codigo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", precio=" + precio +
+                ", cantidad=" + cantidad +
+                ", monto=" + calcularMonto() +
+                ", disponible=" + disponible() +
+                '}';
+    }
+
 
 }
